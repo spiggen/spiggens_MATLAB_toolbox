@@ -1,0 +1,9 @@
+function [y_1, y_2] = linearise(J_11,   J_12, ...
+                                J_21,   J_22, ...
+                                c_1,    c_2, ...
+                                at_x_1, at_x_2)
+
+y_1 = c_1 + J_11*at_x_1 + J_12*at_x_2;
+y_2 = c_2 + J_21*at_x_2 + J_22*at_x_2;
+
+end
